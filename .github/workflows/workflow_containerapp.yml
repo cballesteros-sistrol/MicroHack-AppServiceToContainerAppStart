@@ -1,4 +1,4 @@
-# This workflow will build a .NET project
+r# This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
 name: Build and Deploy to Container App
@@ -57,7 +57,7 @@ jobs:
           imageToDeploy: user3.azurecr.io/microhackapp:${{ steps.get_tag.outputs.image_tag }}
           acrUsername: ${{ secrets.ACR_USERNAME }}
           acrPassword: ${{ secrets.ACR_PASSWORD }}
-          resourceGroup: MicroHack-AppServiceToContainerApp
+          resourceGroup: user3
           containerAppEnvironment: microhack-containerappenvironment
           containerAppName: microhack-containerapp
           targetPort: 8080
